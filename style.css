@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+.banner{
+    height:100vh;
+    background:url("https://assets.nflxext.com/ffe/siteui/vlv3/9f844c11-7d2d-4d91-9052-2f4d55f3dfd0/8b58c2c5-3d2d-43c4-a65c-99e438a0c97d/IN-en-20240219-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.7);
+}
+
+header{
+    position:relative;
+    z-index:2;
+    display:flex;
+    justify-content:space-between;
+    padding:25px 8%;
+}
+
+.logo{
+    width:140px;
+}
+
+.signin-btn{
+    background:#e50914;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:3rem;
+    max-width:700px;
+}
+
+.hero-content h3{
+    margin-top:15px;
+    font-weight:400;
+}
+
+.hero-content p{
+    margin-top:20px;
+}
+
+.email-box{
+    margin-top:20px;
+    display:flex;
+    gap:10px;
+}
+
+.email-box input{
+    width:350px;
+    padding:15px;
+}
+
+.email-box button{
+    background:#e50914;
+    border:none;
+    color:white;
+    padding:15px 25px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.feature{
+    border-top:8px solid #222;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    padding:80px 10%;
+}
+
+.feature img{
+    width:450px;
+    max-width:100%;
+}
+
+.text{
+    max-width:500px;
+}
+
+.text h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.faq{
+    border-top:8px solid #222;
+    padding:80px 10%;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
+
+.faq-item{
+    margin-bottom:10px;
+}
+
+.faq-btn{
+    width:100%;
+    text-align:left;
+    padding:20px;
+    background:#303030;
+    color:white;
+    border:none;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.faq-content{
+    background:#303030;
+    display:none;
+    padding:20px;
+    margin-top:2px;
+}
+
+footer{
+    border-top:8px solid #222;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+    .feature{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+    .email-box{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .email-box input{
+        width:100%;
+    }
+}
